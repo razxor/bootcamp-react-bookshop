@@ -46,7 +46,7 @@ const Header = () => {
                 <div className="flex gap-3 justify-center">
                     <div className="tooltip tooltip-bottom" data-tip="Buy Book">
                         <Link className="py-2 px-4 bg-orange-500 rounded text-white text-lg font-semibold hover:bg-yellow-500">
-                            <i class="fa-solid fa-cart-shopping"></i>
+                            <i className="fa-solid fa-cart-shopping"></i>
                         </Link>
                     </div>
                     <div className="tooltip tooltip-bottom" data-tip="Sign In">
