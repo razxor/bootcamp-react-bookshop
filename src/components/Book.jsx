@@ -4,8 +4,7 @@ import Rating from 'react-rating';
 import { Link } from 'react-router-dom';
 import ROUTES from '../routes';
 
-export const Book = () => {
-    console.log(books);
+export const Book = () => {    
     return (
         <section id='Book' className='w-4/5 mx-auto pb-9'>
             <div className="heading text-center py-6">
