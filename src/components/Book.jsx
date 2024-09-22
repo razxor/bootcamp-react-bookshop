@@ -13,24 +13,29 @@ export const Book = () => {
             </div>
             <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 {
-                    books.map((book) => {
+                    books.map((book, i) => {                        
+                        let tags = book.tags;
                         return (
-                            <div className="col-span-1">
+                            <div className="col-span-1" key={i}>
                                 <div className="card bg-base-100 shadow-xl w-full rounded h-96">
                                     <figure>
                                         <img
                                             src={`${book.image}`}
                                             alt="Shoes" />
                                     </figure>
-                                    <div className="card-body">
+                                    <div className="card-body p-3">
                                         <h2 className="card-title">
-                                            Shoes!
-                                            <div className="badge badge-secondary">NEW</div>
+                                            {book.bookName}
                                         </h2>
-                                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                                        <div className="card-actions justify-end">
-                                            <div className="badge badge-outline">Fashion</div>
-                                            <div className="badge badge-outline">Products</div>
+                                        <p>{book.author}</p>
+                                        <div className="card-actions">
+                                            {                                                
+                                                tags.map((tag, i) => {                                                
+                                                    return(
+                                                        <div className="badge badge-secondary  badge-outline" key={i}>{tag}</div>
+                                                    )
+                                                })
+                                            }                                            
                                         </div>
                                     </div>
                                 </div>
