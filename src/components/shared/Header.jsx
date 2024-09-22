@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from 'react-dom';
 import { Link } from "react-router-dom";
+import ROUTES from "../../routes";
 const Header = () => {
     return (
         <div className="navbar bg-base-100 px-0 lg:px-16 shadow-md sticky top-0 z-10">
@@ -23,23 +24,31 @@ const Header = () => {
                     <ul
                         tabIndex={0}
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        <li><a>Home</a></li>
-                        <li><a>About</a></li>
-                        <li><a>Blog</a></li>
-                        <li><a>FAQ</a></li>
+                        <li><Link to={ROUTES.HOME}>Home</Link></li>
+                        <li><Link to={ROUTES.ABOUT}>About</Link></li>
+                        <li><Link to={ROUTES.BLOG}>Blog</Link></li>
+                        <li><Link to={ROUTES.FAQ}>FAQ</Link></li>
                     </ul>
                 </div>
-                <a className="text-6xl font-bold">
+                <Link className="text-6xl font-bold" to={ROUTES.HOME}>
                     <img src='/images/logo.png' width={100} height={30} />
-                </a>
+                </Link>
             </div>
 
             <div className="navbar-center hidden lg:flex justify-end items-end text-right w-3/5">
                 <ul className="flex gap-5 px-1">
-                    <li className="py-3 px-4 text-lg font-semibold hover:text-orange-500 cursor-pointer"><a>Home</a></li>
-                    <li className="py-3 px-4 text-lg font-semibold hover:text-orange-500 cursor-pointer"><a>About</a></li>
-                    <li className="py-3 px-4 text-lg font-semibold hover:text-orange-500 cursor-pointer"><a>Blog</a></li>
-                    <li className="py-3 px-4 text-lg font-semibold hover:text-orange-500 cursor-pointer"><a>FAQ</a></li>
+                    <li className="py-3 px-4 text-lg font-semibold hover:text-orange-500 cursor-pointer">
+                        <Link to={ROUTES.HOME}>Home</Link>
+                    </li>
+                    <li className="py-3 px-4 text-lg font-semibold hover:text-orange-500 cursor-pointer">
+                        <Link to={ROUTES.ABOUT}>About</Link>
+                    </li>
+                    <li className="py-3 px-4 text-lg font-semibold hover:text-orange-500 cursor-pointer">
+                        <Link to={ROUTES.BLOG}>Blog</Link>
+                    </li>
+                    <li className="py-3 px-4 text-lg font-semibold hover:text-orange-500 cursor-pointer">
+                        <Link to={ROUTES.FAQ}>FAQ</Link>
+                    </li>
                 </ul>
             </div>
             <div className="navbar-end sm:1/2 lg:w-2/5 pr-2 lg:pr-0">
@@ -51,7 +60,7 @@ const Header = () => {
                     </div>
                     <div className="tooltip tooltip-bottom" data-tip="Sign In">
                         <Link className="py-2 px-4 bg-orange-500 rounded text-white text-lg font-semibold hover:bg-lime-500" title="">
-                            <i className="fas fa-user"></i>
+                        <i class="fa-solid fa-right-to-bracket"></i>
                         </Link>
                     </div>
                 </div>

@@ -4,6 +4,9 @@ import Home from '../pages/Home';
 import ROUTES from '../routes/index'
 import MasterLayout from '../layouts/MasterLayout';
 import { BookDetails } from '../pages/BookDetails';
+import { About } from '../pages/About';
+import { Blog } from '../pages/Blog';
+import { Faq } from '../pages/Faq';
 
 const router = createBrowserRouter([
     {
@@ -16,15 +19,15 @@ const router = createBrowserRouter([
             },
             {
                 path: `${ROUTES.ABOUT}`,
-                element: <Home />,
+                element: <About />,
             },
             {
                 path: `${ROUTES.BLOG}`,
-                element: <Home />,
+                element: <Blog />,
             },
             {
                 path: `${ROUTES.FAQ}`,
-                element: <Home />,
+                element: <Faq />,
             },
             {
                 path: `${ROUTES.SINGLE_BOOK.STATIC}`,
