@@ -8,7 +8,7 @@ export const BookDetails = () => {
   let book = books.find((item) => item.bookId == bookId)
   console.log(book);
   return (
-    <section id='bookDetails' className='w-4/5 mx-auto'>
+    <section id='bookDetails' className='w-4/5 mx-auto'>      
       <div className='grid grid-cols-8 py-12 gap-10'>
         <div className="col-span-3">
           <figure>
@@ -18,7 +18,7 @@ export const BookDetails = () => {
           </figure>
         </div>
         <div className="col-span-5">
-          <h1 className='text-4xl'>{book.bookName}</h1>
+          <h1 className='text-4xl font-bold'>{book.bookName}</h1>
           <div className='py-2'>
             <Rating
               emptySymbol="far fa-star text-orange-500"
