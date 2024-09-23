@@ -27,7 +27,7 @@ export const Book = () => {
                                                 alt="Shoes" />
                                         </figure>
                                         <div className="card-body p-5">
-                                            <div className="grid lg:grid-cols-3 justify-center">
+                                            <div className="grid grid-cols-3 justify-center">
                                                 <div className="col-span-2">
                                                     <h2 className="card-title">
                                                         {book.bookName}
