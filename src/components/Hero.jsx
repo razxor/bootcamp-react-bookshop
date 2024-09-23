@@ -9,7 +9,7 @@ export const Hero = () => {
                 Find Your Next Favorite Book at Book Online Shop
                 </p>
                 <div className='flex gap-5 mt-6 lg:mb-1'>
-                    <button className='bg-orange-500 px-6 w-52 sm:w-full md:w-52 hover:bg-lime-500 py-4 rounded text-white text-lg font-bold' >
+                    <button className='bg-orange-500 px-6 w-full sm:w-full md:w-52 hover:bg-lime-500 py-4 rounded text-white text-lg font-bold' >
                     <i className="fa-solid fa-cart-shopping"></i> Buy Book
                     </button>                    
                 </div>
