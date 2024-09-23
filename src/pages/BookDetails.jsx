@@ -2,11 +2,15 @@ import React, { useEffect } from 'react'
 import { createBrowserRouter, useLocation, useParams } from 'react-router-dom';
 import books from '../../book.json'
 import Rating from 'react-rating';
+import { toast } from 'react-toastify';
 
 export const BookDetails = () => {
   const { bookId } = useParams();
   let book = books.find((item) => item.bookId == bookId)
-  console.log(book);
+  
+  const handleClick = (book, msg) => {
+    toast.success(`${book.bookId} ${book.bookName} ${msg}`, {position: "bottom-right",});
+  }
   return (
     <section id='bookDetails' className='w-4/5 mx-auto'>      
       <div className='grid grid-cols-8 py-12 gap-10'>
@@ -51,8 +55,8 @@ export const BookDetails = () => {
           </div>
 
           <div className='flex gap-5 pt-3 '>
-            <button className='btn btn-warning rounded w-60'>Wish to Read</button>
-            <button className='btn btn-error rounded w-60'>Add to Cart</button>
+            <button className='btn btn-warning rounded w-60' onClick={()=>handleClick(book, "has been added to the Wishlist")}>Wish to Read</button>
+            <button className='btn btn-error rounded w-60' onClick={()=>handleClick(book, "has been added to the Cart")}>Add to Cart</button>
           </div>
         </div>
       </div>
