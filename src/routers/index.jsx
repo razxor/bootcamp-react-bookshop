@@ -35,7 +35,7 @@ const router = createBrowserRouter([
                 element: <BookDetails />,
             },
             {
-                path: '*', // Wildcard route for handling 404
+                path: '*',              //Wildcard route for handling 404
                 element: <NotFound />, // Render the NotFound page for undefined routes
             }
         ]

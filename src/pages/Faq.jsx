@@ -3,7 +3,7 @@ import React from 'react'
 export const Faq = () => {
   return (
     <section id='faq' className='w-5/6 mx-auto pb-12'>
-      <h1 className='text-5xl font-bold text-center py-12'>FAQ</h1>
+      <h1 className='text-6xl font-bold text-center py-12'>FAQ</h1>
       <div className="join join-vertical w-full rounded">
         {/* Question 9.1 */}
         <div className="collapse collapse-arrow join-item border-base-300 border">
