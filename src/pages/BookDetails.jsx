@@ -22,7 +22,7 @@ export const BookDetails = () => {
           </figure>
         </div>
         <div className="col-span-1 lg:col-span-5">
-          <h1 className='text-4xl font-bold'>{book.bookName}</h1>
+          <h1 className='text-3xl sm:text-3xl lg:text-4xl font-bold'>{book.bookName}</h1>
           <div className='py-2'>
             <Rating
               emptySymbol="far fa-star text-orange-500"

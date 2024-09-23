@@ -6,7 +6,9 @@ export const Footer = () => {
     return (
         <footer className="footer bg-neutral text-neutral-content p-10">
             <aside>
+                <Link to={ROUTES.HOME}>
                 <img src="/images/logo.png" alt="" width={200} height={100} />
+                </Link>
                 <p className='px-0 sm:px-0 md:px-6'>
                     Online Book Shop
                     <br />
