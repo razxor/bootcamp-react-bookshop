@@ -10,3 +10,9 @@
     font-weight: 600;
     padding: 10px 0px;
 }
+
+
+.border-tag{
+    border: 1px solid oklch(69.71% 0.329 342.55 / 1);
+    color: oklch(69.71% 0.329 342.55 / 1);
+}

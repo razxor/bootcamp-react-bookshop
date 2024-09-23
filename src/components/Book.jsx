@@ -50,14 +50,18 @@ export const Book = () => {
                                             </div>
 
                                             <div className="grid grid-cols-3 justify-between items-center gap-5">
-                                                <div className="col-span-3 lg:col-span-3 flex gap-5">
+                                                <div className="col-span-3 lg:col-span-3">
+                                                    <div className="grid grid-cols-3 gap-5 justify-between">
                                                     {
                                                         tags.map((tag, i) => {
                                                             return (
-                                                                <div className="badge badge-secondary  badge-outline" key={i}>{tag}</div>
+                                                                
+                                                                <div className="col-span-1 badge badge-secondary  badge-outline" key={i}>{tag}</div>
+                                                                //  <div className="col-span-1 rounded-3xl border-tag px-2 flex justify-center items-center" key={i}>{tag}</div>
                                                             )
                                                         })
                                                     }
+                                                    </div>                                                    
                                                 </div>
                                                 <div className="col-span-3 lg:col-span-3">
                                                     <Link className="btn btn-outline rounded-full btn-success w-full" to={ROUTES.SINGLE_BOOK.DYNAMIC(book.bookId)}>
