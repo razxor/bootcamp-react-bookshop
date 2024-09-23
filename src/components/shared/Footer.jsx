@@ -5,7 +5,7 @@ export const Footer = () => {
         <footer className="footer bg-neutral text-neutral-content p-10">
             <aside>
                 <img src="/public/images/logo.png" alt="" width={200} height={100} />
-                <p className='px-6'>
+                <p className='px-0 sm:px-0 md:px-6'>
                     Online Book Shop
                     <br />
                     All rights reserved © {new Date().getFullYear()}

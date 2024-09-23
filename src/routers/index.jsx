@@ -7,6 +7,7 @@ import { BookDetails } from '../pages/BookDetails';
 import { About } from '../pages/About';
 import { Blog } from '../pages/Blog';
 import { Faq } from '../pages/Faq';
+import NotFound from '../pages/NotFound'; 
 
 const router = createBrowserRouter([
     {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
             {
                 path: `${ROUTES.SINGLE_BOOK.STATIC}`,
                 element: <BookDetails />,
+            },
+            {
+                path: '*', // Wildcard route for handling 404
+                element: <NotFound />, // Render the NotFound page for undefined routes
             }
         ]
     },

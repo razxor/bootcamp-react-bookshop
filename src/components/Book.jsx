@@ -6,7 +6,7 @@ import ROUTES from '../routes';
 
 export const Book = () => {    
     return (
-        <section id='Book' className='w-4/5 mx-auto pb-9'>
+        <section id='Book' className='w-full lg:w-4/5 px-6 sm:px-6 md:mx-auto pb-9'>
             <div className="heading text-center py-6">
                 <h1 className='text-6xl font-bold'>Books</h1>
                 {/* <p className='py-2'>
