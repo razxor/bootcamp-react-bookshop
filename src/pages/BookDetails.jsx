@@ -13,15 +13,15 @@ export const BookDetails = () => {
   }
   return (
     <section id='bookDetails' className='w-4/5 mx-auto'>      
-      <div className='grid grid-cols-8 py-12 gap-10'>
-        <div className="col-span-3">
+      <div className='grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-8 py-12 gap-10'>
+        <div className="col-span-1 lg:col-span-3">
           <figure>
             <img
               src={`${book.image}`}
               alt="car!" />
           </figure>
         </div>
-        <div className="col-span-5">
+        <div className="col-span-1 lg:col-span-5">
           <h1 className='text-4xl font-bold'>{book.bookName}</h1>
           <div className='py-2'>
             <Rating
@@ -54,9 +54,9 @@ export const BookDetails = () => {
             }
           </div>
 
-          <div className='flex gap-5 pt-3 '>
-            <button className='btn btn-warning rounded w-60' onClick={()=>handleClick(book, "has been added to the Wishlist")}>Wish to Read</button>
-            <button className='btn btn-error rounded w-60' onClick={()=>handleClick(book, "has been added to the Cart")}>Add to Cart</button>
+          <div className='flex flex-col sm:flex-col lg:flex-row gap-5 pt-3 '>
+            <button className='btn btn-warning rounded w-full sm:w-full lg:w-60' onClick={()=>handleClick(book, "has been added to the Wishlist")}>Wish to Read</button>
+            <button className='btn btn-error rounded w-full sm:w-full lg:w-60' onClick={()=>handleClick(book, "has been added to the Cart")}>Add to Cart</button>
           </div>
         </div>
       </div>
