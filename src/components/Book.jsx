@@ -33,7 +33,7 @@ export const Book = () => {
                                                         {book.bookName}
                                                     </h2>
                                                     <p>
-                                                        <i class="fa-solid fa-user-tie"></i> {book.author}
+                                                        <i className="fa-solid fa-user-tie"></i> {book.author}
                                                     </p>
                                                 </div>
                                                 <div className="col-span-1 text-end flex flex-col justify-center items-end">
