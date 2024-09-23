@@ -54,9 +54,9 @@ export const BookDetails = () => {
             }
           </div>
 
-          <div className='flex flex-col sm:flex-col lg:flex-row gap-5 pt-3 '>
-            <button className='btn btn-warning rounded w-full sm:w-full lg:w-60' onClick={()=>handleClick(book, "has been added to the Wishlist")}>Wish to Read</button>
-            <button className='btn btn-error rounded w-full sm:w-full lg:w-60' onClick={()=>handleClick(book, "has been added to the Cart")}>Add to Cart</button>
+          <div className='flex flex-col sm:flex-col md:flex-row gap-2  pt-3 '>
+            <button className='btn btn-warning rounded w-full sm:w-full md:w-1/2' onClick={()=>handleClick(book, "has been added to the Wishlist")}>Wish to Read</button>
+            <button className='btn btn-error rounded w-full sm:w-full md:w-1/2' onClick={()=>handleClick(book, "has been added to the Cart")}>Add to Cart</button>
           </div>
         </div>
       </div>
