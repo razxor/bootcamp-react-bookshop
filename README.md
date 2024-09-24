@@ -14,11 +14,11 @@ A web application for browsing and purchasing books, built using **React.js**.
 
 
 ### Main Features:
-- Browse a variety of books
+- Navigation
+- Bannar
+- Display Book list
 - View book details
-- Add books to cart
-- Checkout process
-- Search functionality
+- FAQ
 - Responsive design
 
 ## Technologies Used
@@ -32,7 +32,7 @@ A web application for browsing and purchasing books, built using **React.js**.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/bookshop-react-app.git
+   git clone https://github.com/razxor/bootcamp-react-bookshop.git
 
 ## Live Demo
 
