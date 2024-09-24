@@ -1,8 +1,39 @@
-# React + Vite
+# Online Book Shop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Name
+Online Book Shop
 
-Currently, two official plugins are available:
+## Project Details
+A web application for browsing and purchasing books, built using **React.js**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+- **React.js**: Core framework for building the application
+- **React Router DOM**: For handling navigation and routing
+- **HTML/CSS**: For structuring and styling the app
+- **JavaScript**: Core scripting language
+
+
+### Main Features:
+- Browse a variety of books
+- View book details
+- Add books to cart
+- Checkout process
+- Search functionality
+- Responsive design
+
+## Technologies Used
+- HTML
+- TailwindCSS
+- DaisyUI
+- JavaScript
+-ReactJS
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/bookshop-react-app.git
+
+## Live Demo
+
+Visit the live version of the application [here](https://bootcamp-react-bookshop.vercel.app/).
